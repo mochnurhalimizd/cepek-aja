@@ -30,13 +30,17 @@ module.exports = {
             }
         },
         'linebreak-style': [2, 'unix'],
-        'no-bitwise': [1, { allow: ['~', '>>>', '>>', '<<', '|', '&'], int32Hint: true }],
+        'no-bitwise': [
+            1,
+            { allow: ['~', '>>>', '>>', '<<', '|', '&'], int32Hint: true }
+        ],
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-underscore-dangle': [0],
         quotes: [2, 'single'],
         semi: [2, 'always'],
         'space-before-function-paren': 'off',
         'react/prefer-stateless-function': 'off',
+        'react/no-unescaped-entities': 0,
         'react/jsx-filename-extension': [
             1,
             {
